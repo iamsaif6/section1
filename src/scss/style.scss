@@ -1,0 +1,96 @@
+section{
+    position: relative;
+
+    &::after{
+         content: '';
+         background: #39D4BE;
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 60%;
+    }
+
+
+     .btn-left{
+          background: #fff;
+          color: #39D4BE;
+          padding: 15px 30px;
+          font-size: 16px;
+          display: inline-block;
+          font-weight: 700;
+          margin-top: 15px;
+
+     }
+    .form-section{
+         position: relative;
+         z-index: 1;
+         padding: 100px 0;
+
+         input,textarea{
+             font-size: 17px; 
+             color: #39D4BE;
+            
+         }
+
+         input::placeholder,textarea::placeholder,input{
+              color: #999;
+         }
+
+         input::focus{
+              outline: none;
+         }
+    }
+
+    
+.form-section:after {
+     position: absolute;
+     content: 'Appoinment';
+     left: -24%;
+     top: 37%;
+     font-size: 39px;
+     font-weight: 700;
+     transform: rotate(-90deg);
+     color: rgba(255, 255, 255, 0.644);
+   }
+
+
+    .right-wrapper{
+         padding: 100px 0 100px 100px;
+
+         h2{
+              font-size: 25px;
+              font-weight: 600;
+              margin-bottom: 25px;
+              color: #777;
+         }
+
+
+         ul{
+              margin: 0;
+              padding: 0;
+         }
+         ul li{
+              list-style: none;
+              padding: 10px 0;
+              font-weight: 500;
+              color: #777;
+
+              i{
+                   font-size: 15px;
+                   margin-right: 10px;
+                   color:#39D4BE ;
+              }
+         }
+
+         .btn-right{
+              background: #39D4BE;
+              color: #fff;
+              padding: 15px 35px;
+              font-size: 16px;
+              display: inline-block;
+              font-weight: 700;
+              margin-top: 15px;
+         }
+    }
+}
